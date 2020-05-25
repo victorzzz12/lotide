@@ -3,7 +3,7 @@ const assertEqual = function(actual, expected) {
     console.log(`Assertion Passed: ${actual} === ${expected}`);
   } else {
     console.log(`Assertion Failed: ${actual} !== ${expected}`);
-  }   
+  }
 };
 
 const tail = function(words) {
@@ -13,7 +13,7 @@ const tail = function(words) {
   }
   newArray.splice(0,1);
   return newArray;
-}
+};
 
 const words = ["Yo Yo", "Lighthouse", "Labs"];
 
