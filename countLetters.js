@@ -17,13 +17,12 @@ const countLetters = function(anyString) {
 
       } else {
         letterCount[letter] += 1;
-
       }
     }
   }
-  console.log(letterCount);
   return letterCount;
 };
 
-countLetters("lighthouse in the house");
-assertEqual(countLetters('hello'), { h: 1, e: 1, l: 2, o: 1 });
+console.log(countLetters('hello'));
+
+assertEqual(countLetters('hello'), { h: 1, e: 1, l: 2, o: 1 }); //failed, will confer with mentor next day
