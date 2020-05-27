@@ -10,11 +10,11 @@ const assertEqual = function(actual, expected) {
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
-  }
-  else if (array1 === array2) {
+
+  } else if (array1 === array2) {
     return true;
-  }
-  else if (array1 == null || array2 == null) {
+
+  } else if (array1 === null || array2 === null) {
     return false;
   }
   for (let i = 0; i < array1.length; i++) {
