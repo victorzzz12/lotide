@@ -7,6 +7,7 @@ const eqArrays = function(array1, array2) {
 
   } else if (array1 === null || array2 === null) {
     return false;
+  
   }
   for (let i = 0; i < array1.length; i++) {
     if (array1[i] !== array2[i]) return false;
@@ -22,13 +23,13 @@ const middle = function(newArray) {
   let middle = [];
   if (newArray.length <= 2) {
     return middle;
-  }
-  else if (newArray.length % 2 === 0) {
-    middle.push(newArray[(newArray.length/2 - 1)]);
-    middle.push(newArray[(newArray.length/2)]);
+
+  } else if (newArray.length % 2 === 0) {
+    middle.push(newArray[(newArray.length / 2 - 1)]);
+    middle.push(newArray[(newArray.length / 2)]);
     return middle;
-  }
-  else if (newArray.length % 2 !== 0) {
+
+  } else if (newArray.length % 2 !== 0) {
     middle.push(newArray[Math.floor(newArray.length / 2)]);
     return middle;
   }
