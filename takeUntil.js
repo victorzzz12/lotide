@@ -4,14 +4,14 @@ const takeUntil = function(array, callback) {
   
   for (let item of array) {
     if (callback(item) === false) {
-    results.push((item));
+      results.push((item));
     } else if (callback(item) === true) {
-        return results;
+      return results;
     }
   }
   return results;
 
-}
+};
 
 
 //The function will return a "slice of the array with elements taken from the beginning." It should keep going until the callback/predicate returns a truthy value.
