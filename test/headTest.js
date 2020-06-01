@@ -2,25 +2,24 @@ const chai = require('chai'); // 1
 const assert = chai.assert;
 
 const head = require('../head');
-const assertEqual = require('../assertEqual.js');
 
 describe("#head()", function() {
 
-  it("should return Assertion Passed and true if first element of arr is the same as the expected output", function() {
+  it("should return true if head(arr) === expected ", function() {
 
     const arr = [5,6,7];
     const expected = 5;
 
-    assert.isTrue(assertEqual(head(arr), expected));
+    assert.deepEqual(head(arr), expected);
 
   });
 
-  it("should return Assertion Failed and false if first element of arr is not the same as the expected output", function() {
+  it("should return undefined if array is empty", function() {
 
     const arr = [];
-    const expected = 5;
+    const expected = undefined;
 
-    assert.isFalse(assertEqual(head(arr), expected));
+    assert.isTrue(head(arr) === expected);
 
   });
 

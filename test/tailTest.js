@@ -2,7 +2,6 @@ const chai = require('chai'); // 1
 const assert = chai.assert;
 
 const tail = require('../tail');
-const assertEqual = require('../assertEqual.js');
 
 describe("#tail()", function() {
 
@@ -17,20 +16,20 @@ describe("#tail()", function() {
 
   });
 
-  it("should return Assertion Failed and [Labs] for [Hello, Lighthouse, Labs]", function() {
+  it("should return false if returns [Labs] for [Hello, Lighthouse, Labs]", function() {
 
-    assert.isFalse(assertEqual(tail(['Hello', 'Lighthouse', 'Labs']), ['Labs'])); //will always return false because object !== object
+    assert.deepEqual(tail(['Hello', 'Lighthouse', 'Labs']), ['Lighthouse', 'Labs']); //will always return false because object !== object
     //deepEqual will cause an error as the two does not equal
 
   });
 
 
-  it("should return Assertion Passed and true if length of the new array is the same as the expected array", function() {
+  it("should return true if length of the new array is the same as the expected array", function() {
 
     const arr = [1, 2, 3];
     const expected = [2, 3];
 
-    assert.isTrue(assertEqual(tail(arr).length, expected.length));
+    assert.isTrue(tail(arr).length === expected.length);
   });
 
 });
