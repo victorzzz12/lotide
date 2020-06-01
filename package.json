@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@victorzzz/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lotide Lighthouse Labs, a Lodash clone",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/victorzzz12/lotide.git"
   },
-  "author": "",
+  "author": "Victor Liang",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/victorzzz12/lotide/issues"
